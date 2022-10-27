@@ -1,0 +1,9 @@
+name: 'List env'
+description: 'list env'
+
+runs:
+  using: "composite"
+  if: ${{ github.event_name == 'workflow_dispatch' }}
+  steps:
+    - run: env
+      shell: bash
