@@ -3,5 +3,5 @@ description: 'testing'
 runs:
   using: "composite"
   steps:
-    - run: echo ${{{ matrix.flavor }}
+    - run: echo ${{ matrix.flavor }}
       shell: bash
