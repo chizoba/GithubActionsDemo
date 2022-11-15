@@ -1,0 +1,7 @@
+name: 'Matrix value in composite action Test'
+description: 'testing'
+runs:
+  using: "composite"
+  steps:
+    - run: echo ${{{ matrix.flavor }}
+      shell: bash

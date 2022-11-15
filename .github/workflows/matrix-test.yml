@@ -1,0 +1,13 @@
+on: [workflow_dispatch]
+
+jobs:
+  matrix_in_composite_action:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        flavor: [ Google, Clear ]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Call composite action
+        uses: ./.github/actions/matrix
