@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: actions/checkout@v2
-        with:
-          repository: chizoba/setup-action
+#      - uses: actions/checkout@v2
+#        with:
+#          repo: chizoba/setup-action
 
       - name: Setup dependencies
         #uses: ./.github/actions/setup

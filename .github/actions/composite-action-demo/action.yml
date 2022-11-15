@@ -11,8 +11,8 @@ inputs:
 #    value: ${{ steps.random-number-generator.outputs.random-number }}
 runs:
   using: "composite"
-  if: ${{ github.event_name == 'workflow_dispatch' }}
-  timeout-minutes: 60
+#  if: ${{ github.event_name == 'workflow_dispatch' }}
+#  timeout-minutes: 60
   steps:
     - run: echo Hello ${{ inputs.who-to-greet }}.
       shell: bash
